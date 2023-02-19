@@ -11,6 +11,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--headers-color);
+  background-color: #ffffff;
 }
 ul {
   list-style: none;
@@ -24,7 +25,7 @@ ul {
   color: var(--headers-color);
   text-decoration: none;
   text-transform: uppercase;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
@@ -46,6 +47,9 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02px;
+}
+.header-list .current {
+  color: var(--hoover-color);
 }
 
 .header-link:hover,
@@ -69,7 +73,7 @@ ul {
 .header-adrlink:active {
   color: var(--hoover-color);
 }
-/* HERO SECTION MAKE A CHANGE WITH BG!!!!!*/
+/* HERO SECTION MAKE */
 .hero {
   background-color: var(--headers-color);
 }
@@ -82,21 +86,37 @@ ul {
   color: var(--hero-text-color);
 }
 .hero-btn {
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   background: var(--logo-button-color);
   color: var(--hero-text-color);
+  cursor: pointer;
 }
 
-/* ADVANTAGES HIDDEN H */
+.hero-btn:active,
+.hero-btn:focus {
+  background-color: var(--hoover-color);
+}
+
+/* ADVANTAGES  */
 .advntg {
-  background-color: var(--text-for-logofooter-bg-ourteam-color);
 }
 .advntg-title-hide {
+  position: absolute;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  width: 1px;
 }
+
 .advntg-list {
 }
 .advntg-item {
@@ -117,7 +137,6 @@ ul {
 
 /* EXAMPLES OF WORK  */
 .exm {
-  background-color: var(--text-for-logofooter-bg-ourteam-color);
 }
 .exm-title {
   font-weight: 700;
@@ -138,6 +157,14 @@ ul {
 .team {
   background-color: var(--text-for-logofooter-bg-ourteam-color);
 }
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
 .team-list {
 }
 .team-item {
@@ -183,4 +210,56 @@ ul {
 .footer-logo span {
   color: var(--logo-button-color);
   text-decoration: none;
+}
+
+/*  PORTFOLIO HTML  */
+.smain {
+}
+.smain-title-hidden {
+  position: absolute;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  width: 1px;
+}
+.smain-list {
+}
+.smain-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  background-color: var(--text-for-logofooter-bg-ourteam-color);
+  color: var(--logo-button-color);
+}
+.smain-button:active,
+.smain-button:focus {
+  background-color: var(--hoover-color);
+  color: var(--hero-text-color);
+}
+.smain-list-examples {
+}
+.smain-item:hover {
+}
+.smain-image {
+}
+.smain-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.smain-p {
+  color: var(--text-for-p-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
 }
